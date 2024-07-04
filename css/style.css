@@ -702,3 +702,28 @@
 
   background-color: #ffc905;
 }
+
+/** =====================================
+/** Footer
+/** ===================================== */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+
+  padding: 0 2em;
+
+  max-width: 1440px;
+}
+
+.footer-paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  font-weight: 700;
+
+  color: #ffffff;
+}
