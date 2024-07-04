@@ -727,3 +727,56 @@
 
   color: #ffffff;
 }
+
+/** ==========================================================================
+/** @Media Rules
+/** ========================================================================== */
+
+@media (max-width: 1400px) {
+
+  /** Header */
+
+  .header-nav {
+    justify-content: flex-start;
+  }
+
+  .header-list {
+    justify-content: flex-start;
+
+    width: 100%;
+  }
+
+  .header-item {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+
+  /** Sections layout */
+
+  .section {
+    width: 100%;
+  }
+
+  .section-skills {
+    order: 2;
+  }
+
+  .section-code {
+    order: 3;
+  }
+
+  .section-experience {
+    order: 4;
+  }
+
+  .section-education {
+    order: 5;
+  }
+}
+
+@media (max-width: 1000px) {
+  .avatar-image {
+    min-width: 350px;
+    max-height: 350px;
+  }
+}
