@@ -1,8 +1,782 @@
+/** ==========================================================================
+/** Page markup
+/** ========================================================================== */
+
 .page-html {
   scroll-behavior: smooth;
 
+  font-family: "Cabin", sans-serif;
   font-size: 110%;
   font-weight: 300;
   line-height: 1.4;
   color: #000000;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+
+  background-color: #292935;
+}
+
+.page-main {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: center;
+
+  background-color: #22222e;
+}
+
+/** ==========================================================================
+/** Sections Layout
+/** ========================================================================== */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+
+  max-width: 1440px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.section {
+  padding: 0 2em;
+
+  width: 50%;
+}
+
+.section-contacts {
+  order: 1;
+
+  background-color: #292935;
+}
+
+.section-skills {
+  order: 3;
+
+  background-color: #292935;
+}
+
+.section-code {
+  order: 5;
+
+  background-color: #292935;
+}
+
+.section-experience {
+  order: 2;
+
+  background-color: #22222e;
+}
+
+.section-education {
+  order: 4;
+
+  background-color: #22222e;
+}
+
+.section-english {
+  order: 6;
+
+  background-color: #22222e;
+}
+
+/** ==========================================================================
+/** Headings
+/** ========================================================================== */
+
+/** Margins and font stylizaion for H1 */
+
+.page-heading {
+  margin: 0.39em 0;
+
+  font-size: 2.55em;
+  font-weight: 500;
+}
+
+/** Font stylization for H2 */
+
+.section-heading {
+  position: relative;
+
+  font-size: 1.45em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content-section-heading {
+  color: #ffffff;
+}
+
+/** Underlining by pseudo for H2 */
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  width: 1.7em;
+  height: 0.15em;
+
+  background-color: #ffc905;
+}
+
+/** Unique H2: display method, margins, font and stroke */
+
+.special-heading {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0.1em 0.3em 0.2em;
+
+  border-radius: 0.2em;
+
+  font-size: 1.45em;
+  font-weight: 500;
+
+  background-color: #ffc905;
+}
+
+/** Font stylization for H3 */
+
+.subsection-heading {
+  font-size: 1.22em;
+  font-weight: 500;
+
+  color: #ffffff;
+}
+
+/** ==========================================================================
+/** Links
+/** ========================================================================== */
+
+/** Header links stylization */
+
+.header-link {
+  display: inline-block;
+
+  padding: 1em 0;
+
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 1em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.header-link:hover,
+.header-link:focus {
+  text-underline-offset: 0.6em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+/** Contact section links stylization */
+
+.contact-link {
+  padding-left: 3.5em;
+
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  text-underline-offset: 0.4em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+.email-link,
+.discord-link,
+.telegram-link,
+.github-link {
+  position: relative;
+}
+
+.email-link::before {
+  position: absolute;
+  content: "";
+  top: -0.1em;
+  left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+
+  background-image: url("../assets/img/decoration/ico-email.png");
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.discord-link::before {
+  position: absolute;
+  content: "";
+  top: -0.1em;
+  left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+
+  background-image: url("../assets/img/decoration/ico-discord.png");
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.telegram-link::before {
+  position: absolute;
+  content: "";
+  top: -0.1em;
+  left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+
+  background-image: url("../assets/img/decoration/ico-telegram.png");
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.github-link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+
+  background-image: url("../assets/img/decoration/ico-github.png");
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+/** Experience section links stylization */
+
+.experience-link {
+  text-decoration: none;
+}
+
+.experience-name {
+  padding: 0.2em;
+
+  font-weight: 700;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.experience-link:hover .experience-name,
+.experience-link:focus .experience-name {
+  text-underline-offset: 0.4em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+/** Applicant's GitHub link in footer */
+
+.tj-link {
+  margin-left: 1em;
+
+  text-transform: uppercase;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.tj-link:hover,
+.tj-link:focus {
+  text-underline-offset: 0.4em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+/** Rolling Scopes logo link in footer */
+
+.rsschool-link {
+  padding: 0.3em;
+
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.25em;
+
+  color: #000000;
+  background-color: #ffc905;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.rsschool-link:hover,
+.rsschool-link:focus {
+  text-underline-offset: 0.2em;
+
+  text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+/** =====================================
+/** Header
+/** ===================================== */
+
+.header-container {
+  display: flex;
+  flex-basis: 80%;
+
+  max-width: 1440px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 0 2em;
+
+  width: 100%;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1em 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-item {
+  margin-left: 1em;
+}
+
+/** =====================================
+/** About Section
+/** ===================================== */
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.avatar-wrapper {
+  position: relative;
+
+  height: 100%;
+}
+
+.avatar-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 2em;
+  width: 13%;
+  height: 100%;
+
+  background-color: #ffc905;
+  opacity: 70%;
+}
+
+.text-about-wrapper {
+  padding: 0 2em;
+
+  width: 50%;
+}
+
+.text-about-paragraph {
+  padding-bottom: 1em;
+}
+
+/** =====================================
+/** Contacts Section
+/** ===================================== */
+
+.contacts-list {
+  position: relative;
+
+  padding: 0.7em 0;
+
+  list-style: none;
+}
+
+.contacts-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5em;
+  height: 100%;
+
+  background-color: #ffc905;
+}
+
+.contact-item {
+  padding: 0.35em 0;
+}
+
+/** =====================================
+/** Skills Section
+/** ===================================== */
+
+.skills-list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  margin-bottom: 0.4em;
+
+  width: 16em;
+}
+
+.skill-item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 5em;
+  width: 6em;
+  height: 0.15em;
+
+  background-color: #5e5d6b;
+}
+
+.skill-name {
+  padding: 0.2em;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.skill-percent {
+  padding: 0.2em;
+
+  border-radius: 0.2em;
+
+  width: 3em;
+
+  text-align: center;
+
+  font-weight: 700;
+
+  background-color: #ffc905;
+}
+
+.skill-html,
+.skill-css,
+.skill-js,
+.skill-dsa,
+.skill-git,
+.skill-vsc,
+.skill-figma {
+  position: relative;
+}
+
+.skill-html::before,
+.skill-css::before,
+.skill-js::before,
+.skill-dsa::before,
+.skill-git::before,
+.skill-vsc::before,
+.skill-figma::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 5em;
+  height: 0.15em;
+
+  background-color: #ffc905;
+}
+
+/** value width = skill percent * scale width 6em */
+
+.skill-html::before {
+  width: 4.5em;
+}
+
+.skill-css::before {
+  width: 2.7em;
+}
+
+.skill-js::before {
+  width: 0.9em;
+}
+
+.skill-dsa::before {
+  width: 0.3em;
+}
+
+.skill-git::before {
+  width: 2.7em;
+}
+
+.skill-vsc::before {
+  width: 4.5em;
+}
+
+.skill-figma::before {
+  width: 4.5em;
+}
+
+/** =====================================
+/** Code Section
+/** ===================================== */
+
+.code-pre {
+  display: flex;
+}
+
+.code-code {
+  padding: 0 2em;
+
+  background-color: #ffc905;
+}
+
+/** =====================================
+/** Experience Section
+/** ===================================== */
+
+.experience-paragraph {
+  display: flex;
+}
+
+.experience-date {
+  margin-right: 2em;
+  padding: 0.2em;
+
+  border-radius: 0.2em;
+
+  width: 5.5em;
+
+  text-align: center;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffc905;
+}
+
+/** =====================================
+/** Education Section
+/** ===================================== */
+
+.education-list {
+  padding: 0;
+
+  list-style: none;
+
+  color: #ffffff;
+}
+
+.education-image {
+  display: block;
+}
+
+.education-paragraph {
+  display: flex;
+
+  font-weight: 700;
+}
+
+.education-name {
+  padding: 0.2em;
+
+  font-weight: 700;
+}
+
+.education-date {
+
+  margin-right: 2em;
+  padding: 0.2em;
+
+  border-radius: 0.2em;
+
+  width: 5.5em;
+
+  text-align: center;
+  font-weight: 700;
+
+  color: #000000;
+  background-color: #ffc905;
+}
+
+/** =====================================
+/** English Section
+/** ===================================== */
+
+.english-paragraph {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  width: 19em;
+}
+
+.english-paragraph::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8em;
+  width: 6em;
+  height: 0.15em;
+
+  background-color: #5e5d6b;
+}
+
+.english-paragraph::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8em;
+  width: 2.7em;
+  height: 0.15em;
+
+  background-color: #ffc905;
+}
+
+.english-image {
+  display: block;
+
+  margin-bottom: 1em;
+}
+
+.english-level {
+  padding: 0.2em;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.english-percent {
+  padding: 0.2em;
+
+  border-radius: 0.2em;
+
+  width: 3em;
+
+  text-align: center;
+  font-weight: 700;
+
+  background-color: #ffc905;
+}
+
+/** =====================================
+/** Footer
+/** ===================================== */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+
+  padding: 0 2em;
+
+  max-width: 1440px;
+}
+
+.footer-paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+/** ==========================================================================
+/** @Media Rules
+/** ========================================================================== */
+
+@media (max-width: 1400px) {
+
+  /** Header */
+
+  .header-nav {
+    justify-content: flex-start;
+  }
+
+  .header-list {
+    justify-content: flex-start;
+
+    width: 100%;
+  }
+
+  .header-item {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+
+  /** Sections layout */
+
+  .section {
+    width: 100%;
+  }
+
+  .section-skills {
+    order: 2;
+  }
+
+  .section-code {
+    order: 3;
+  }
+
+  .section-experience {
+    order: 4;
+  }
+
+  .section-education {
+    order: 5;
+  }
+}
+
+@media (max-width: 1000px) {
+  .avatar-image {
+    min-width: 350px;
+    max-height: 350px;
+  }
 }
