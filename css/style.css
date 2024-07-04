@@ -41,3 +41,63 @@
 
   background-color: #22222e;
 }
+
+/** ==========================================================================
+/** Sections Layout
+/** ========================================================================== */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+
+  max-width: 1440px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.section {
+  padding: 0 2em;
+
+  width: 50%;
+}
+
+.section-contacts {
+  order: 1;
+
+  background-color: #292935;
+}
+
+.section-skills {
+  order: 3;
+
+  background-color: #292935;
+}
+
+.section-code {
+  order: 5;
+
+  background-color: #292935;
+}
+
+.section-experience {
+  order: 2;
+
+  background-color: #22222e;
+}
+
+.section-education {
+  order: 4;
+
+  background-color: #22222e;
+}
+
+.section-english {
+  order: 6;
+
+  background-color: #22222e;
+}
