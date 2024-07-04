@@ -449,3 +449,113 @@
 .contact-item {
   padding: 0.35em 0;
 }
+
+/** =====================================
+/** Skills Section
+/** ===================================== */
+
+.skills-list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  margin-bottom: 0.4em;
+
+  width: 16em;
+}
+
+.skill-item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 5em;
+  width: 6em;
+  height: 0.15em;
+
+  background-color: #5e5d6b;
+}
+
+.skill-name {
+  padding: 0.2em;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.skill-percent {
+  padding: 0.2em;
+
+  border-radius: 0.2em;
+
+  width: 3em;
+
+  text-align: center;
+
+  font-weight: 700;
+
+  background-color: #ffc905;
+}
+
+.skill-html,
+.skill-css,
+.skill-js,
+.skill-dsa,
+.skill-git,
+.skill-vsc,
+.skill-figma {
+  position: relative;
+}
+
+.skill-html::before,
+.skill-css::before,
+.skill-js::before,
+.skill-dsa::before,
+.skill-git::before,
+.skill-vsc::before,
+.skill-figma::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 5em;
+  height: 0.15em;
+
+  background-color: #ffc905;
+}
+
+/** value width = skill percent * scale width 6em */
+
+.skill-html::before {
+  width: 4.5em;
+}
+
+.skill-css::before {
+  width: 2.7em;
+}
+
+.skill-js::before {
+  width: 0.9em;
+}
+
+.skill-dsa::before {
+  width: 0.3em;
+}
+
+.skill-git::before {
+  width: 2.7em;
+}
+
+.skill-vsc::before {
+  width: 4.5em;
+}
+
+.skill-figma::before {
+  width: 4.5em;
+}
