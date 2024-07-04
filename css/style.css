@@ -596,3 +596,47 @@
 
   background-color: #ffc905;
 }
+
+/** =====================================
+/** Education Section
+/** ===================================== */
+
+.education-list {
+  padding: 0;
+
+  list-style: none;
+
+  color: #ffffff;
+}
+
+.education-image {
+  display: block;
+}
+
+.education-paragraph {
+  display: flex;
+
+  font-weight: 700;
+}
+
+.education-name {
+  padding: 0.2em;
+
+  font-weight: 700;
+}
+
+.education-date {
+
+  margin-right: 2em;
+  padding: 0.2em;
+
+  border-radius: 0.2em;
+
+  width: 5.5em;
+
+  text-align: center;
+  font-weight: 700;
+
+  color: #000000;
+  background-color: #ffc905;
+}
