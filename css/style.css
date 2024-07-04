@@ -166,3 +166,180 @@
 
   color: #ffffff;
 }
+
+/** ==========================================================================
+/** Links
+/** ========================================================================== */
+
+/** Header links stylization */
+
+.header-link {
+  display: inline-block;
+
+  padding: 1em 0;
+
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 1em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.header-link:hover,
+.header-link:focus {
+  text-underline-offset: 0.6em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+/** Contact section links stylization */
+
+.contact-link {
+  padding-left: 3.5em;
+
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  text-underline-offset: 0.4em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+.email-link,
+.discord-link,
+.telegram-link,
+.github-link {
+  position: relative;
+}
+
+.email-link::before {
+  position: absolute;
+  content: "";
+  top: -0.1em;
+  left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+
+  background-image: url("../assets/img/decoration/ico-email.png");
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.discord-link::before {
+  position: absolute;
+  content: "";
+  top: -0.1em;
+  left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+
+  background-image: url("../assets/img/decoration/ico-discord.png");
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.telegram-link::before {
+  position: absolute;
+  content: "";
+  top: -0.1em;
+  left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+
+  background-image: url("../assets/img/decoration/ico-telegram.png");
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+.github-link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+
+  background-image: url("../assets/img/decoration/ico-github.png");
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+/** Experience section links stylization */
+
+.experience-link {
+  text-decoration: none;
+}
+
+.experience-name {
+  padding: 0.2em;
+
+  font-weight: 700;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.experience-link:hover .experience-name,
+.experience-link:focus .experience-name {
+  text-underline-offset: 0.4em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+/** Applicant's GitHub link in footer */
+
+.tj-link {
+  margin-left: 1em;
+
+  text-transform: uppercase;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.tj-link:hover,
+.tj-link:focus {
+  text-underline-offset: 0.4em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+/** Rolling Scopes logo link in footer */
+
+.rsschool-link {
+  padding: 0.3em;
+
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.25em;
+
+  color: #000000;
+  background-color: #ffc905;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.rsschool-link:hover,
+.rsschool-link:focus {
+  text-underline-offset: 0.2em;
+
+  text-decoration-color: rgba(0, 0, 0, 1);
+}
