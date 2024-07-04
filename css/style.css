@@ -343,3 +343,82 @@
 
   text-decoration-color: rgba(0, 0, 0, 1);
 }
+
+/** =====================================
+/** Header
+/** ===================================== */
+
+.header-container {
+  display: flex;
+  flex-basis: 80%;
+
+  max-width: 1440px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 0 2em;
+
+  width: 100%;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1em 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-item {
+  margin-left: 1em;
+}
+
+/** =====================================
+/** About Section
+/** ===================================== */
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.avatar-wrapper {
+  position: relative;
+
+  height: 100%;
+}
+
+.avatar-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 2em;
+  width: 13%;
+  height: 100%;
+
+  background-color: #ffc905;
+  opacity: 70%;
+}
+
+.text-about-wrapper {
+  padding: 0 2em;
+
+  width: 50%;
+}
+
+.text-about-paragraph {
+  padding-bottom: 1em;
+}
