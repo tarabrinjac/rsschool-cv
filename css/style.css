@@ -559,3 +559,17 @@
 .skill-figma::before {
   width: 4.5em;
 }
+
+/** =====================================
+/** Code Section
+/** ===================================== */
+
+.code-pre {
+  display: flex;
+}
+
+.code-code {
+  padding: 0 2em;
+
+  background-color: #ffc905;
+}
