@@ -640,3 +640,65 @@
   color: #000000;
   background-color: #ffc905;
 }
+
+/** =====================================
+/** English Section
+/** ===================================== */
+
+.english-paragraph {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  width: 19em;
+}
+
+.english-paragraph::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8em;
+  width: 6em;
+  height: 0.15em;
+
+  background-color: #5e5d6b;
+}
+
+.english-paragraph::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8em;
+  width: 2.7em;
+  height: 0.15em;
+
+  background-color: #ffc905;
+}
+
+.english-image {
+  display: block;
+
+  margin-bottom: 1em;
+}
+
+.english-level {
+  padding: 0.2em;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.english-percent {
+  padding: 0.2em;
+
+  border-radius: 0.2em;
+
+  width: 3em;
+
+  text-align: center;
+  font-weight: 700;
+
+  background-color: #ffc905;
+}
