@@ -10,6 +10,8 @@
   font-weight: 300;
   line-height: 1.4;
   color: #000000;
+
+  /* border: 1px solid red; */
 }
 
 .page-body {
@@ -21,6 +23,8 @@
   padding: 0;
 
   min-height: 100vh;
+
+  /* border: 1px solid green; */
 }
 
 .page-header {
@@ -30,10 +34,9 @@
   background-color: #292935;
 }
 
-.page-main {
-  display: flex;
-  justify-content: center;
-}
+/* .page-main {
+
+} */
 
 .page-footer {
   display: flex;
@@ -46,18 +49,37 @@
 /** Sections Layout
 /** ========================================================================== */
 
+.main-section-container {
+  display: flex;
+  justify-content: center;
+
+  /* border: 1px solid blue; */
+}
+
+.content-section-container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg,rgba(41, 41, 53, 1) 50%, rgba(34, 34, 46, 1) 50%);
+
+  /* border: 1px solid blue; */
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   flex-basis: 80%;
 
-  max-width: 1440px;
+  max-width: 1135px;
+
+  /* border: 1px solid yellow; */
 }
 
 .main-content {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+
+  /* border: 1px solid green; */
 }
 
 .section {
@@ -274,6 +296,8 @@
   background-size: 1.5em;
 }
 
+/** xx */
+
 /** Experience section links stylization */
 
 .experience-link {
@@ -294,6 +318,31 @@
 
 .experience-link:hover .experience-name,
 .experience-link:focus .experience-name {
+  text-underline-offset: 0.4em;
+
+  text-decoration-color: rgba(255, 201, 5, 1);
+}
+
+/** Education section links stylization */
+
+.education-link {
+  text-decoration: none;
+}
+
+.education-name {
+  padding: 0.2em;
+
+  font-weight: 700;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+
+  color: #ffffff;
+
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.education-link:hover .education-name,
+.education-link:focus .education-name {
   text-underline-offset: 0.4em;
 
   text-decoration-color: rgba(255, 201, 5, 1);
@@ -541,7 +590,7 @@
 }
 
 .skill-js::before {
-  width: 0.9em;
+  width: 1.5em;
 }
 
 .skill-dsa::before {
@@ -583,12 +632,14 @@
 }
 
 .experience-date {
+  display: inline-block;
+
   margin-right: 2em;
   padding: 0.2em;
 
   border-radius: 0.2em;
 
-  width: 5.5em;
+  width: 105px;
 
   text-align: center;
   font-weight: 700;
@@ -626,13 +677,14 @@
 }
 
 .education-date {
+  display: inline-block;
 
   margin-right: 2em;
   padding: 0.2em;
 
   border-radius: 0.2em;
 
-  width: 5.5em;
+  width: 105px;
 
   text-align: center;
   font-weight: 700;
@@ -651,14 +703,14 @@
 
   position: relative;
 
-  width: 19em;
+  width: 20em;
 }
 
 .english-paragraph::before {
   position: absolute;
   content: "";
   top: 50%;
-  left: 8em;
+  left: 10em;
   width: 6em;
   height: 0.15em;
 
@@ -669,8 +721,8 @@
   position: absolute;
   content: "";
   top: 50%;
-  left: 8em;
-  width: 2.7em;
+  left: 10em;
+  width: 3em;
   height: 0.15em;
 
   background-color: #ffc905;
